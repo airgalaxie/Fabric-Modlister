@@ -1,7 +1,12 @@
 # Fabric Modlister
 
-Server-side Fabric mod for Minecraft 26.2. It fills the standard GameSpy4 full-query
-`plugins` field with the loaded top-level Fabric mods and their versions.
+Fabric Modlister is a small proof of concept for a possible Fabric Server Query API
+hook. Minecraft already provides GS4 Query, while Fabric Loader knows which mods are
+loaded. Fabric Modlister connects these existing pieces of information and exposes
+the loaded top-level Fabric mods and their versions through the `plugins` field of
+the existing GS4 full-query response. It does not introduce a custom query protocol.
+
+The proof of concept has been tested with Minecraft 26.2 on a real server.
 
 Example:
 
