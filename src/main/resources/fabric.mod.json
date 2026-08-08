@@ -6,7 +6,7 @@
   "description": "Publishes the loaded Fabric mods through Minecraft's GS4 full query.",
   "authors": [],
   "contact": {},
-  "license": "GPL-3.0",
+  "license": "Apache-2.0",
   "environment": "server",
   "entrypoints": {
     "main": [
