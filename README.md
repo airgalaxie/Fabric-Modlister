@@ -6,12 +6,13 @@ loaded. Fabric Modlister connects these existing pieces of information and expos
 the loaded top-level Fabric mods and their versions through the `plugins` field of
 the existing GS4 full-query response. It does not introduce a custom query protocol.
 
-The proof of concept has been tested with Minecraft 26.2 on a real server.
+The supported Minecraft and Fabric Loader versions are defined in
+`gradle/libs.versions.toml`.
 
 Example:
 
 ```text
-plugins = Fabric: Fabric Modlister 1.0-SNAPSHOT; Some Mod 2.3.1
+plugins = Fabric: Fabric Modlister <version>; Some Mod <version>
 ```
 
 Nested implementation modules and built-in entries such as Minecraft and Java are
@@ -22,7 +23,7 @@ enable-query=true
 query.port=25565
 ```
 
-Build with Java 25 or newer:
+Build with the Java version configured in `gradle/libs.versions.toml` (or newer):
 
 ```bash
 ./gradlew build

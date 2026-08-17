@@ -33,17 +33,23 @@ dependencies {
 }
 
 processResources {
-    def minecraftVersion = libs.versions.minecraft.get()
+    def minecraftRuntimeVersion = libs.versions.minecraft.runtime.get()
     def loaderVersion = libs.versions.fabric.loader.get()
+    def javaVersion = libs.versions.java.get()
+    def mixinVersion = libs.versions.mixin.get()
     inputs.property "version", project.version
-    inputs.property "minecraft_version", minecraftVersion
+    inputs.property "minecraft_version", minecraftRuntimeVersion
     inputs.property "loader_version", loaderVersion
+    inputs.property "java_version", javaVersion
+    inputs.property "mixin_version", mixinVersion
     filteringCharset "UTF-8"
 
-    filesMatching("fabric.mod.json") {
+    filesMatching(["fabric.mod.json", "fabric-modlister.mixins.json"]) {
         expand "version": project.version,
-                "minecraft_version": minecraftVersion,
-                "loader_version": loaderVersion
+                "minecraft_version": minecraftRuntimeVersion,
+                "loader_version": loaderVersion,
+                "java_version": javaVersion,
+                "mixin_version": mixinVersion
     }
 }
 
