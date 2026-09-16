@@ -1,7 +1,7 @@
 [versions]
 loom = "1.18+"
-minecraft = "26.3-rc-2"
-minecraft-runtime = "26.3-rc.2"
+minecraft = "26.3"
+minecraft-runtime = "26.3"
 fabric-loader = "0.19.5"
 mod = "1.0.2-rc-SNAPSHOT"
 java = "25"
