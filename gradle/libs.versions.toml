@@ -1,7 +1,7 @@
 [versions]
 loom = "1.18+"
-minecraft = "26.4-snapshot-1"
-minecraft-runtime = "26.4"
+minecraft = "26.4-snapshot-1" #snapshot-X
+minecraft-runtime = "26.4-alpha.1" #use Alpha.X
 fabric-loader = "0.19.5"
 mod = "1.0.264"
 java = "25"
