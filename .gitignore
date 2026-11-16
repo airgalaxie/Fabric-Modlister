@@ -3,5 +3,6 @@ build/
 target/
 run/
 out/
+.idea/
 .idea/workspace.xml
 *.iml

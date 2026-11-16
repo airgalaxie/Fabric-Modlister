@@ -1,11 +1,12 @@
 [versions]
-loom = "1.18+"
-minecraft = "26.4-snapshot-2" #snapshot-X
-minecraft-runtime = "26.4-alpha.2" #use Alpha.X
-fabric-loader = "0.19.5"
+loom = "1.19-SNAPSHOT"
+minecraft = "26.4-snapshot-8" #snapshot-X
+minecraft-runtime = "26.4-alpha.8" #use Alpha.X
+fabric-loader = "0.20.1"
 mod = "1.0.264"
 java = "25"
-mixin = "0.8"
+#mixin = "0.8"
+mixin = "0.17.5+mixin.0.8.7"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
