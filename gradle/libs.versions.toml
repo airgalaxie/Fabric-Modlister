@@ -1,9 +1,9 @@
 [versions]
 loom = "1.19-SNAPSHOT"
-minecraft = "26.4-snapshot-10" #snapshot-X
-minecraft-runtime = "26.4-alpha.10" #use Alpha.X
+minecraft = "26.4-pre-2" #snapshot-X, pre-x
+minecraft-runtime = "26.4-pre.2" #use Alpha.X, pre.x
 fabric-loader = "0.20.1"
-mod = "1.0.264"
+mod = "1.1.264"
 java = "25"
 #mixin = "0.8.11"
 mixin = "0.17.5+mixin.0.8.7"
